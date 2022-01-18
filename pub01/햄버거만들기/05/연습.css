@@ -1,0 +1,53 @@
+:root {
+    --hamburger-bg : black;
+}
+
+.hamburger-container {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: var(--hamburger-bg);
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    position: absolute;
+    width: 100px;
+    height: 10px;
+    background: yellow;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: "";
+}
+
+.hamburger {
+    top: 50%;
+}
+
+.hamburger::before {
+    top: -30px;
+}
+
+.hamburger::after {
+    top: 30px;
+}
+
+/* 형제 요소 */
+.toggle:checked ~ .hamburger::after {
+    top: 0;
+    transform: rotate(225deg);
+}
+/* 형제 요소 */
+.toggle:checked ~ .hamburger::before {
+    top: 0;
+    transform: rotate(135deg);
+    /* transform: rotate(-45deg); */
+}
+/* 형제 요소 */
+.toggle:checked ~ .hamburger {
+  background: var(--hamburger-bg);
+}

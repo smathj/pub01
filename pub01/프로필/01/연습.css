@@ -1,0 +1,37 @@
+body {
+    background-color: #ff9eaa;
+    padding-top: 8rem;
+    display: flex;
+    justify-content: center;
+  }
+
+.card {
+    background-color: #fff;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 2rem;
+    box-shadow: 0px 1rem 1.5rem rgba(0, 0, 0, 0.5);
+
+}
+
+.banner {
+    background-image: url("space-pattern.jpg");
+    display: flex;
+    justify-content: center;
+}
+
+.profile {
+    background-image: url("sibabeam.jpg");
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    transform: translateY(50%);
+    transition: transform 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+.profile:hover {
+    transform: translateY(50%) scale(1.3);
+  }

@@ -1,0 +1,24 @@
+html,body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    /* align-items: stretch; */
+    /* justify-content: center;  */
+
+}
+
+div {
+    width : 200px;
+    height : 200px;
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+#second {
+    background-color: seagreen;
+}
